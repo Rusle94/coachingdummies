@@ -4,7 +4,9 @@ function createChart() {
         legend: {
             visible: false
         },
-   
+        dataSource: {
+            data: stats
+        },
         series: [{
             type: "area",
             aggregate: "avg",
@@ -48,12 +50,4 @@ function refresh()
     categoryAxis.baseUnit = baseUnitInputs.filter(":checked").val();
 
     chart.refresh();
-}
-function pastlog(){
-    const output = document.getElementById('output');
-   model.datavar.data =
-    `<div> blablalblalblablblablabllablllbablballlala</div>`;
-    
-    showCustomer();
-console.log ("blablablabla", output);
 }
