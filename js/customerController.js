@@ -50,4 +50,4 @@ function refresh()
     categoryAxis.baseUnit = baseUnitInputs.filter(":checked").val();
 
     chart.refresh();
-}w
+}ww
